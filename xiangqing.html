@@ -1,0 +1,1235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>游戏详情页</title>
+<link rel="stylesheet" type="text/css" href="http://www.shouyou.com/css/2015/reset-and-utils.css">
+<link rel="stylesheet" type="text/css" href="http://www.shouyou.com/css/2015/css.css">
+<link rel="stylesheet" type="text/css" href="css/playInfo.css" />
+</head>
+	<body>
+
+	<div id="js-global-topnav" class="topbar">
+<div class="topbar-in">
+<div class="topbar-con"><link rel="stylesheet" type="text/css" href="http://ue8.17173.itc.cn/a/www/index/2013/css/index-topbar-nav.css">
+<div class="index-topbar-nav">
+	<a href="http://www.17173.com/" class="item" target="_blank">17173.com</a>
+	<a href="http://www.shouyou.com/" class="item current" target="_blank"><i class="ico-topbar-sy"></i>shouyou.com</a>
+	<a href="http://www.yeyou.com/" class="item" target="_blank"><i class="ico-topbar-yy"></i>yeyou.com</a>
+	<a href="http://www.2p.com/" class="item" target="_blank"><i class="ico-topbar-2p"></i>2p.com</a>
+	<a href="http://a.17173.com/" class="item item-app" target="_blank"><i class="ico-topbar-app"></i>手机客户端</a>
+</div></div></div></div>
+		
+		<div class="m-header">
+			<div class="m-logo clearfix">
+				<div class="u-logo clearfix">
+					<h1 class="u-name">
+						17173
+						<span>旗下品牌</span>
+					</h1>
+					<a href="" target="_blank"><img src="http://images.shouyou.com/2015/www/2015/03/18/logo.png" alt="" title="" class="sylogo"></a>
+					<hr class="u-line">
+					
+				</div>
+
+				<div class="m-search">	
+					<div class="search-box clearfix">
+						<form class="search-form clearfix" target="_blank" action="http://search.shouyou.com/online" method="get">
+							<div class="m-input">
+								<input type="hidden" name="page" value="1">
+								<input type="hidden" name="type" value="2" class="search_type">
+								<input type="text" class="search-text" onclick="this.value=''" data-v="1" autocomplete="off" name="keyword">
+								<input type="text" class="search-text" onclick="this.value=''" data-v="2" autocomplete="off" style="display:none;">
+								<input type="text" class="search-text" onclick="this.value=''" data-v="3" autocomplete="off" style="display:none;">
+								<input type="text" class="search-text" onclick="this.value=''" data-v="4" autocomplete="off" style="display:none;">
+								<div class="search-select">
+									<div class="search-type"><span>新闻</span><i></i></div>
+									<div class="type-box png">
+										<ul class="type-list js-type-list">
+											<li style="display:none;"><a href="javascript:void(0)" data-type="2" data-id="1">新闻</a></li>
+											<li style="display:block;"><a href="javascript:void(0)" data-type="1" data-id="2">游戏</a></li>
+											<li style="display:block;"><a href="javascript:void(0)" data-type="2" data-id="3">资讯</a></li>
+											<li style="display:block;"><a href="javascript:void(0)" data-type="2" data-id="4">攻略</a></li>
+										
+									</ul></div>
+								</div>
+							</div>
+							<input type="submit" class="search-btn" value="">
+						</form>
+					</div>
+
+					<div class="m-hotsearch">
+						热门搜索：<a href="" title="" target="_blank" class="u-seach-key">卡牌</a>
+						<a href="" title="" target="_blank" class="u-seach-key">龙珠</a>
+						<a href="" title="" target="_blank" class="u-seach-key">奇迹世界</a>
+						<a href="" title="" target="_blank" class="u-seach-key">QQ飞行岛</a>
+					</div>
+				</div>
+
+				<div class="m-icon clearfix">
+					<div class="m-icon-1 f-marginR">
+						<a href="" title="" target="_blank">
+							<div class="u-icon u-icon-173"></div>
+							<p>17173</p>
+						</a>
+					</div>
+
+					<div class="m-icon-1">
+						<a href="" title="最强攻略" target="_blank">
+							<div class="u-icon u-icon-glv"></div>
+							<p>最强攻略</p>
+						</a>
+					</div>
+					<div class="m-icon-2">
+						<a href="" title="梦幻" target="_blank">
+							<div class="u-icon u-icon-mh"></div>
+							<p>梦幻西游</p>
+						</a>
+					</div>
+				</div>				
+			</div>
+
+
+
+
+
+			<div class="m-nav clearfix">
+				<div class="m-menu">
+					<ul class="u-menu clearfix">
+						<li class="menu-item"><a href="" target="_blank" title="99手游排行榜">99手游排行榜</a></li>
+						<li class="menu-item"><a href="" target="_blank" title="网游频道">网游频道</a></li>
+						<li class="menu-item"><a href="" target="_blank" title="产业频道">产业频道</a></li>
+						<li class="menu-item"><a href="" target="_blank" title="游戏论坛">游戏论坛</a></li>
+						<li class="menu-item"><a href="" target="_blank" title="礼包发号">礼包发号</a></li>
+					</ul>
+				</div>
+
+
+				<div class="m-moblie clearfix">
+					<div class="mol-box">
+						<a href="" target="_blank" title="手机网游">
+							<span class="mol-pic phone-pic"></span>
+							<i class="mol-txt">手机网游</i>
+						</a>
+					</div>
+					<div class="mol-box">
+						<a href="" target="_blank" title="安卓游戏">
+							<span class="mol-pic and-pic"></span>
+							<i class="mol-txt">安卓游戏</i>
+						</a>
+					</div>
+					<div class="mol-box">
+						<a href="" target="_blank" title="苹果游戏">
+							<span class="mol-pic ios-pic"></span>
+							<i class="mol-txt">苹果游戏</i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="m-lable">
+				<ul class="u-lable clearfix">
+					<li class="lable-item"><a href="" title="大陆新闻" target="_blank">大陆新闻</a>|</li>
+					<li class="lable-item"><a href="" title="全球新闻" target="_blank">全球新闻</a>|</li>
+					<li class="lable-item"><a href="" title="游戏测评" target="_blank">游戏测评</a>|</li>
+					<li class="lable-item"><a href="" title="游戏视频" target="_blank">游戏视频</a>|</li>
+					<li class="lable-item"><a href="" title="人物专访" target="_blank">人物专访</a>|</li>
+					<li class="lable-item"><a href="" title="八卦周边" target="_blank">八卦周边</a>|</li>
+					<li class="lable-item"><a href="" title="福利中心" target="_blank">福利中心</a>|</li>
+					<li class="lable-item"><a href="" title="专题" target="_blank">专题</a>|</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="cur-bar">
+				您的位置：
+				<a href="http://www.shouyou.com" target="_blank">手游网</a>
+				<span>&gt;</span>
+				<a href="null" target="_blank">测试</a>
+				<span>&gt;</span>yy 
+			</div>
+
+			<div class="pinfo clearfix">
+				<div class="m-icon">
+					<div class="playIcon">
+						<img src="images/pic.png" width="170" height="170" alt="" />
+					</div>					
+					<div class="m-num clearfix" style="display:none;">
+						<p class="unum1">121</p>
+						<p class="unum2">
+							<span class="unum2-1">+1</span>
+							<span class="unum2-2">期待</span>
+						</p>
+					</div>
+					<div class="m-good clearfix">
+						<div class="good fun-box">
+							<span>好玩</span>
+							<span class="hw">14</span>
+						</div>
+						<div class="bad no-fun-box">
+							<span>不好玩</span>
+							<span class="bhw">14</span>
+						</div>
+					</div>
+				</div>
+				<div class="discript">
+					<div class="m-dis clearfix">
+						<h1 class="sub">刀塔传奇</h1><span class="sMark mark1">专区</span> <span class="sMark mark2">论坛</span>
+						<p><span></span></p>
+					</div>
+					<div class="m-star clearfix">
+						<span class="star star1"></span>
+						<span class="star star1"></span>
+						<span class="star star1"></span>
+						<span class="star star2"></span>
+						<span class="star star3"></span>
+						<span class="fen">99分</span>
+					</div>
+					<div class="m-param clearfix">
+						<div class="param1">
+							<p class="canshu">收费模式：<span>道具收费</span></p>
+							<p class="canshu">软件语言：中文</p>
+							<p class="canshu">更新时间：2015-06-02</p>
+						</div>
+
+						<div class="param1">
+							<p class="canshu f-tind">开发商：<span class="word8" title="莉莉丝莉莉丝莉莉啊">                                       北京畅游天下网络技术有限公司</span></p>
+							<p class="canshu f-tind">类&nbsp;&nbsp;&nbsp;型：<span>月色扮演</span></p>
+							<p class="canshu f-tind">题&nbsp;&nbsp;&nbsp;材：<span>魔幻</span></p>
+						</div>
+						
+					</div>
+					<div class="clearfix">
+							<a href="" target="_blank" class="xz and">Android下载<span>19.MB</span></a>
+							<a href="" target="_blank" class="xz ios">iOS下载<span>19.MB</span></a>
+					</div>
+				</div>
+				<div class="g-code">
+					<div class="m-code">
+						<div class="code-con">
+							<img src="images/code.jpg" width="140" height="140" alt="" />						
+						</div>
+					</div>
+					<p>扫一扫直接下载</p>
+				</div>
+			</div>
+			<!--play-con-->
+			<div class="play-con clearfix">
+				<!--con-left-->
+				<div class="con-left">
+					<div class="bh clearfix">
+						<h3 class="sub">游戏简介</h3>						
+					</div>
+					<div class="bd">
+						<div class="xs"  id="xs" style="height:120px;">
+							玩家将扮演一个三界的救世主，周旋于三界六道之间，与悟空嫦娥一起并肩作战，探索自己的身世之谜，揭穿魔族和妖族背后的巨大阴谋。整个游戏重策略、讲阵型，组成心中最强的梦幻阵容，特色创新玩法“玉帝选秀”系统，3大职业感受巅峰对决，让你感受叱咤风云的西游世界！						
+							
+								玩家将扮演一个三界的救世主，周旋于三界六道之间，与悟空嫦娥一起并肩作战，探索自己的身世之谜，揭穿魔族和妖族背后的巨大阴谋。整个游戏重策略、讲阵型，组成心中最强的梦幻阵容，特色创新玩法“玉帝选秀”系统，3大职业感受巅峰对决，让你感受叱咤风云的西游世界！
+								玩家将扮演一个三界的救世主，周旋于三界六道之间，与悟空嫦娥一起并肩作战，探索自己的身世之谜，揭穿魔族和妖族背后的巨大阴谋。整个游戏重策略、讲阵型，组成心中最强的梦幻阵容，特色创新玩法“玉帝选秀”系统，3大职业感受巅峰对决，让你感受叱咤风云的西游世界！
+						</div>					
+						<p class="zk"><a id="showM" class="showM">展开+</a></p>					
+					</div>
+					<div class="bh clearfix">
+						<h3 class="sub">游戏礼包</h3>						
+					</div>
+					<div class="libao">
+						<ul class="lblist" id="lblist">
+							<li class="lbitem clearfix">
+								<div class="c1">
+									<a href="" title="" target="_blank" class="c1-tit">*【火影忍者】五一劳动节礼包</a>
+									<a target="_blank" class="c1-info lb">详情</a>	
+								</div>
+								<div class="c2">
+									<span class="c2-ios">ios</span>
+									<span class="c2-and">and</span>
+								</div>
+								<div class="c3">
+									剩余量：<span>999</span>
+								</div>
+								<div class="c4">
+									<a class="linghao" target="_blank">领取</a>
+								</div>
+								<div class="dujia">
+									<div class="sanjiao"></div>
+									<div class="xq-con">
+										强化石*20，江湖秘籍*20，精炼石*10
+									</div>
+								</div>
+							</li>
+							<li class="lbitem clearfix">
+								<div class="c1">
+									<a href="" title="" target="_blank" class="c1-tit">*【火影忍者】五一劳动节礼包</a>
+									<a target="_blank" class="c1-info lb">详情</a>	
+								</div>
+								<div class="c2">
+									<span class="c2-ios">ios</span>
+									<span class="c2-and">and</span>
+								</div>
+								<div class="c3">
+									剩余量：<span>999</span>
+								</div>
+								<div class="c4">
+									<a class="linghao" target="_blank">领取</a>
+								</div>
+								<div class="dujia">
+									<div class="sanjiao"></div>
+									<div class="xq-con">
+										强化石*20，江湖秘籍*20，精炼石*10
+									</div>
+								</div>
+							</li>
+							<li class="lbitem clearfix">
+								<div class="c1">
+									<a href="" title="" target="_blank" class="c1-tit">*【火影忍者】五一劳动节礼包</a>
+									<a target="_blank" class="c1-info lb">详情</a>	
+								</div>
+								<div class="c2">
+									<span class="c2-ios">ios</span>
+									<span class="c2-and">and</span>
+								</div>
+								<div class="c3">
+									剩余量：<span>999</span>
+								</div>
+								<div class="c4">
+									<a class="linghao" target="_blank">领取</a>
+								</div>
+								<div class="dujia">
+									<div class="sanjiao"></div>
+									<div class="xq-con">
+										强化石*20，江湖秘籍*20，精炼石*10
+									</div>
+								</div>
+							</li>
+							<li class="lbitem clearfix">
+								<div class="c1">
+									<a href="" title="" target="_blank" class="c1-tit">*【火影忍者】五一劳动节礼包</a>
+									<a target="_blank" class="c1-info lb">详情</a>	
+								</div>
+								<div class="c2">
+									<span class="c2-ios">ios</span>
+									<span class="c2-and">and</span>
+								</div>
+								<div class="c3">
+									剩余量：<span>999</span>
+								</div>
+								<div class="c4">
+									<a class="linghao" target="_blank">领取</a>
+								</div>
+								<div class="dujia">
+									<div class="sanjiao"></div>
+									<div class="xq-con">
+										强化石*20，江湖秘籍*20，精炼石*10
+									</div>
+								</div>
+							</li>
+							<li class="lbitem clearfix">
+								<div class="c1">
+									<a href="" title="" target="_blank" class="c1-tit">*【火影忍者】五一劳动节礼包</a>
+									<a target="_blank" class="c1-info lb">详情</a>	
+								</div>
+								<div class="c2">
+									<span class="c2-ios">ios</span>
+									<span class="c2-and">and</span>
+								</div>
+								<div class="c3">
+									剩余量：<span>999</span>
+								</div>
+								<div class="c4">
+									<a class="linghao" target="_blank">领取</a>
+								</div>
+								<div class="dujia">
+									<div class="sanjiao"></div>
+									<div class="xq-con">
+										强化石*20，江湖秘籍*20，精炼石*10
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="bh clearfix">
+						<h3 class="sub">游戏图片</h3>						
+					</div>
+					<div class="pic-bd">
+						<ul class="piclist clearfix" id="piclist" style="left:0;">
+							<li class="picitem">
+								<a href="" target="blank"><img src="images/pic5.jpg" alt="" width="286" height="379" /></a>
+							</li>
+							<li class="picitem">
+								<a href="" target="blank"><img src="images/pic5.jpg" alt="" width="286" height="379" /></a>
+							</li>
+							<li class="picitem">
+								<a href="" target="blank"><img src="images/pic5.jpg" alt="" width="286" height="379" /></a>
+							</li>
+							<li class="picitem">
+								<a href="" target="blank"><img src="images/pic5.jpg" alt="" width="286" height="379" /></a>
+							</li>
+							<li class="picitem">
+								<a href="" target="blank"><img src="images/pic5.jpg" alt="" width="286" height="379" /></a>
+							</li>
+							<li class="picitem">
+								<a href="" target="blank"><img src="images/pic5.jpg" alt="" width="286" height="379" /></a>
+							</li>
+							<li class="picitem">
+								<a href="" target="blank"><img src="images/pic5.jpg" alt="" width="286" height="379" /></a>
+							</li>
+							<li class="picitem">
+								<a href="" target="blank"><img src="images/pic5.jpg" alt="" width="286" height="379" /></a>
+							</li>
+						</ul>
+						<a class="btn bleft" id="bleft"><i></i></a>
+						<a class="btn bright" id="bright"><i></i></a>
+					</div>
+
+					<div class="bh clearfix">
+						<h3 class="sub">游戏视频</h3>						
+					</div>
+					<div class="video-bd">
+						<ul class="vlist clearfix">
+							<li class="vitem">
+								<a href="" target="_blank" title="" class="vitem-a">
+									<img src="images/pic4.jpg" alt="" width="207" height="117" />
+									<p>《塔防骑士》小鲜肉</p>
+									<b class="cover"></b>
+								</a>
+							</li>
+							<li class="vitem">
+								<a href="" target="_blank" title="" class="vitem-a">
+									<img src="images/pic4.jpg" alt="" width="207" height="117" />
+									<p>《塔防骑士》小鲜肉</p>
+									<b class="cover"></b>
+								</a>
+							</li>
+							<li class="vitem">
+								<a href="" target="_blank" title="" class="vitem-a">
+									<img src="images/pic4.jpg" alt="" width="207" height="117" />
+									<p>《塔防骑士》小鲜肉</p>
+									<b class="cover"></b>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="bh clearfix">
+						<h3 class="sub">相关资讯</h3>						
+					</div>
+					<div class="zx-bd">
+						<ul class="zxlist">
+							<li class="zxitem">
+								<a href="http://news.shouyou.com/news/06032015/153820208.shtml" target="_blank">最强魔幻3D手游《守护雅典娜》的前世今生</a>
+								<span>2015-06-03 15:38:20</span>
+							</li>
+							<li class="zxitem">
+								<a href="http://news.shouyou.com/news/06032015/153820208.shtml" target="_blank">最强魔幻3D手游《守护雅典娜》的前世今生</a>
+								<span>2015-06-03 15:38:20</span>
+							</li>
+							<li class="zxitem">
+								<a href="http://news.shouyou.com/news/06032015/153820208.shtml" target="_blank">最强魔幻3D手游《守护雅典娜》的前世今生</a>
+								<span>2015-06-03 15:38:20</span>
+							</li>
+							<li class="zxitem">
+								<a href="http://news.shouyou.com/news/06032015/153820208.shtml" target="_blank">最强魔幻3D手游《守护雅典娜》的前世今生</a>
+								<span>2015-06-03 15:38:20</span>
+							</li>
+							<li class="zxitem">
+								<a href="http://news.shouyou.com/news/06032015/153820208.shtml" target="_blank">最强魔幻3D手游《守护雅典娜》的前世今生</a>
+								<span>2015-06-03 15:38:20</span>
+							</li>
+						</ul>
+					</div>
+					<div class="bh clearfix">
+						<h3 class="sub">同类游戏</h3>						
+					</div>
+					<div class="same-bd">
+						<ul class="slist">
+							<li class="sitem">
+								<a href="" target="_blank">
+									<img src="images/pic.png" alt="" width="120" height="120"/>
+									<p>王者之剑</p>
+								</a>
+							</li>
+							<li class="sitem">
+								<a href="" target="_blank">
+									<img src="images/pic.png" alt="" width="120" height="120"/>
+									<p>王者之剑</p>
+								</a>
+							</li>
+							<li class="sitem">
+								<a href="" target="_blank">
+									<img src="images/pic.png" alt="" width="120" height="120"/>
+									<p>王者之剑</p>
+								</a>
+							</li>
+							<li class="sitem">
+								<a href="" target="_blank">
+									<img src="images/pic.png" alt="" width="120" height="120"/>
+									<p>王者之剑</p>
+								</a>
+							</li>
+							<li class="sitem">
+								<a href="" target="_blank">
+									<img src="images/pic.png" alt="" width="120" height="120"/>
+									<p>王者之剑</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<!--再逛逛-->
+					<div class="goback2015"><a href="http://www.shouyou.com/" target="_blank"><img src="http://ue.shouyoucdn.com/images/www/index/2015/shouyouback.png"></a></div>
+					<!--再逛逛 end-->
+					<!--畅言-->
+						<div id="SOHUCS" sid="<!--infoId-->_<!--infoClass-->_<!--infoChannel-->"></div>						
+					<!--畅言end-->
+
+					<div class="backshouyou"><a href="http://www.shouyou.com/" target="_blank">返回手游网首页</a></div>
+
+				</div>
+				<!--con-left end-->
+
+				<!--con-right-->
+				<div class="con-right">
+					<div class="bh clearfix">
+						<h3 class="sub fborder">99手游榜</h3>
+						<a href="" target="_blank" class="subMark">更多+</a>					
+					</div>
+					<div class="syb-bd">
+						<ul id="syul1">
+							<li class="sybitem syhover">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										1
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span class="up-num">9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix">
+									<div class="c4">
+										1
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span class="up-num">9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										2
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span class="mid-num">9985</span><i class="mid"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										2
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span class="mid-num">9985</span><i class="mid"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										3
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span class="low-num">9985</span><i class="low"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										3
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span class="low-num">9985</span><i class="low"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										4
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										4
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										5
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										5
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										6
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										6
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										7
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										7
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										8
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										8
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										9
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										9
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										10
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										10
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="bh clearfix">
+						<h3 class="sub fborder">玩家期待榜</h3>
+						<a href="" target="_blank" class="subMark">更多+</a>					
+					</div>
+					<div class="syb-bd">
+						<ul id="syul2">
+							<li class="sybitem syhover">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										1
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix">
+									<div class="c4">
+										1
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										2
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										2
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										3
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										3
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										4
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										4
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										5
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										5
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										6
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										6
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										7
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										7
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										8
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										8
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										9
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										9
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+							<li class="sybitem">
+								<div class="syb-item-1 clearfix">
+									<div class="c1">
+										10
+									</div>
+									<div class="c2">
+										<a href="" target="_blank"><img src="images/pic.png" alt="" width="60" height="60" /></a>
+									</div>
+									<div class="c3">
+										<h3><a href="" target="_blank">火影忍者</a></h3>
+										<p>角色扮演</p>
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+								<div class="syb-item-2 clearfix" >
+									<div class="c4">
+										10
+									</div>
+									<div class="c5">
+										<a href="" target="_blank">叮当猫</a>
+									</div>
+									<div class="c6">
+										<p class="sybnum"><span>9985</span><i class="up"></i></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="bh clearfix">
+						<h3 class="sub fborder">手游专题</h3>					
+					</div>
+					<div class="syb-bd">
+						<ul class="ztlist">
+						<li class="pc-pic-item">
+							<a href="" target="_blank"><img src="http://images.shouyou.com/2015/www/2015/04/20/info-img04.jpg" width="210" height="140"></a>
+							<p><a href="" target="_blank">DeNA罗用全球化视野来面对</a></p>
+						</li>
+						<li class="pc-pic-item">
+							<a href="" target="_blank"><img src="http://images.shouyou.com/2015/www/2015/04/20/info-img04.jpg" width="210" height="140"></a>
+							<p><a href="" target="_blank">DeNA罗用全球化视野来面对</a></p>
+						</li>
+						<li class="pc-pic-item">
+							<a href="" target="_blank"><img src="http://images.shouyou.com/2015/www/2015/04/20/info-img04.jpg" width="210" height="140"></a>
+							<p><a href="" target="_blank">DeNA罗用全球化视野来面对</a></p>
+						</li>
+						<li class="pc-pic-item">
+							<a href="" target="_blank"><img src="http://images.shouyou.com/2015/www/2015/04/20/info-img04.jpg" width="210" height="140"></a>
+							<p><a href="" target="_blank">DeNA罗用全球化视野来面对</a></p>
+						</li>
+<li class="pc-pic-item">
+							<a href="" target="_blank"><img src="http://images.shouyou.com/2015/www/2015/04/20/info-img04.jpg" width="210" height="140"></a>
+							<p><a href="" target="_blank">DeNA罗用全球化视野来面对</a></p>
+						</li>
+					</ul>
+					</div>
+				</div>
+				<!--con-right end-->
+			</div>
+			<!--play-con end-->
+		</div>
+		<div class="g-footer">
+		<div class="g-wrap">
+			<div class="clearfix">
+				<div class="boxLeft">
+					<div class="bh-A">
+							<h3 class="bh-A-tit">友情链接</h3>
+					</div>
+					<ul class="friendly-list clearfix">
+						<li><a href="http://mt.shouyou.com/" target="_blank">我叫MT专区</a> 
+					</li><li><a href="http://coc.shouyou.com/" target="_blank">COC专区</a> 
+					</li><li><a href="http://bb.shouyou.com/" target="_blank">海岛奇兵专区</a> 
+					</li><li><a href="http://ma.shouyou.com/" target="_blank">百万亚瑟王</a> 
+					</li><li><a href="http://qmyx.shouyou.com/" target="_blank">全民英雄专区</a> 
+					</li><li><a href="http://wxyx.shouyou.com/" target="_blank">微信游戏专区</a> 
+					</li><li><a href="http://dtcq.shouyou.com/" target="_blank">刀塔传奇专区</a> 
+					</li><li><a href="http://dzm.shouyou.com/" target="_blank">大掌门专区</a> 
+					</li><li><a href="http://mlbb.shouyou.com/" target="_blank">魔力宝贝专区</a> 
+					</li><li><a href="http://chanye.shouyou.com/" target="_blank">产业频道</a> 
+					</li><li><a href="http://bbs.shouyou.com/" target="_blank">手机游戏论坛</a> 
+					</li><li><a href="http://www.shouyou.com/game/" target="_blank">手机游戏</a> 
+					</li><li><a href="http://www.shouyou.com/game/jhsjyx.shtml" target="_blank">手机游戏分类</a> 
+					</li><li><a href="http://bk.17173.com/" target="_blank">游戏百科</a> </li>
+					</ul>
+				</div>
+
+				<div class="boxR">
+					<div class="bh-A">
+							<h3 class="bh-A-tit">关注我们</h3>
+					</div>
+					<div class="bd-A">
+						<ul class="clearfix">
+							<li class="weibo">
+								<a href="http://e.weibo.com/17173shouyou" target="_blank">
+									<i class="xina"></i>
+									<p class="tit">新浪微博</p>
+								</a>
+							</li>
+							<li class="weibo">
+								<a href="http://t.qq.com/shouyou-com" target="_blank">
+									<i class="qq"></i>
+									<p class="tit">腾讯微博</p>
+								</a>
+							</li>
+						</ul>
+						<div class="code">
+							<img src="http://images.shouyou.com/2015/www/2015/03/18/code.jpg" alt="">
+							<p class="tit">微信二维码</p>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="link-box">
+				<a target="_blank" href="http://www.shouyou.com/about/index.shtml">关于我们</a>|
+				<a target="_blank" href="http://bbs.shouyou.com">人气社区</a>|
+				<a target="_blank" href="http://www.shouyou.com/about/index3.shtml">商务合作</a>|
+				<a href="javascript:addBookmark('手游网 - 游戏平台首页::打造最好玩的游戏平台！','http://www.shouyou.com/');">加入收藏</a>|
+<a target="_blank" href="http://www.shouyou.com/about/index6.shtml">网站地图</a>
+			</div>
+			<div class="info-box clearfix">
+				<div class="boxLeft">
+					<p>Copyright © 2012-2014 ShouYOU.com All rights reserved. 北京冠游时空数码技术有限公司</p>
+					<p>京公网安备11010702000975&nbsp;<a target="_blank" href="http://www.miibeian.gov.cn/">京ICP证11007422-5号</a>&nbsp;&nbsp;网络文化经营许可证：京网文〔2011〕0293-103号&nbsp;互联网出版许可证</p>
+					<p><span class="up">健康游戏忠告：</span>抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+				</div>
+
+
+				<div class="boxR clearfix">
+					 <div class="icon1">
+					 	<a href="" target="_blank">
+					 		<img src="http://images.shouyou.com/2015/www/2015/03/18/pic-1.png" alt="">
+					 	</a>
+					 	<p>互联网出版许可证</p>
+					 </div>
+					 <div class="icon2">
+					 	<a href="" target="_blank"><img src="http://images.shouyou.com/2015/www/2015/03/18/pic-2.png" alt=""></a>
+					 </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+<div class="popbg" id="popbg"></div>
+<div class="popbox" id="popbox">
+	<div class="pop-tit">
+		提示<a id="btnClose" class="btnclose"></a>
+	</div>
+	<p class="disc">下载17173游戏app领取该游戏礼包</p>
+	<div class="buzhou clearfix">
+		<img src="images/code.jpg" class="bz-pic" alt="" width="79" height="79">
+		<div class="bx-disc">
+			<p>步骤：</p>
+			<p>1.扫一扫二维码，下载17173游戏app；</p>
+			<p>2.下载完成后，进入礼包模块，搜索游戏名称/礼包名称，即可领取礼包；</p>
+
+		</div>
+		
+	</div>
+	<div class="gw clearfix">
+			<a href="" target="_blank" title="" class="btnsite">进入官网</a>
+			<a target="_blank" title="" class="btnclose2">关闭</a>
+		</div>
+	
+</div>
+
+<script src="js/jquery-min.js"></script>
+<script src="js/kaiFu.js"></script>
+<script src="js/site-info.js"></script>
+<script>
+	var kaiFu = new kaiFu();
+	kaiFu.hoverFun("lblist","lb");
+	kaiFu.popBox();	
+	kaiFu.picScroll();
+	kaiFu.zkFun("xs");
+	kaiFu.itemHover("syul1","sybitem");
+	kaiFu.itemHover("syul2","sybitem");
+</script>
+<script>
+	var article = {}; 	
+	article.infoChannel = '<!--infoChannel-->'; 	
+	article.infoId = '<!--infoId-->'; 	
+	article.infoClass = '<!--infoClass-->'; 	
+	article.mood = 1;
+
+
+	//\u7545\u8a00\u8bc4\u8bba
+	var _config = {
+		categoryId :'<!--infoChannel-->', //\u63a5\u5165\u9891\u9053\u9700\u8981\u586b\u5199\u76f8\u5e94\u7684categoryId 
+	     pageSize: 10 //\u63a7\u5236\u6bcf\u9875\u663e\u793a\u8bc4\u8bba\u6761\u6570\uff0c\u5982\u65e0\u7279\u6b8a\u8981\u6c42\uff0c\u6b64\u53c2\u6570\u53ef\u53bb\u9664
+		};
+	  (function(){
+	    var appid = 'cyqvqDTV5',
+	    conf = 'prod_303ed4c69846ab36c2904d3ba8573050';
+	    var doc = document,
+	    s = doc.createElement('script'),
+	    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+	    s.type = 'text/javascript';
+	    s.charset = 'utf-8';
+	    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+	    h.insertBefore(s,h.firstChild);
+	    SCS_NO_IFRAME = true;
+	  })()
+
+
+	  	word8();
+		function word8(){
+			$(".word8").each(function(){
+			  word_8 = $(this).text();
+			  word_8 = word_8.replace(/\s/ig,'');
+			  var _word_8 ="";
+			 	if(word_8.length >8){
+			 		word_8 = word_8.substring(0, 8);
+			 	  	_word_8 += word_8 + "..." ;
+			 	  	$(this).text(_word_8);
+			 	};
+			});
+		};		  
+	  	    
+	  	var info_params = {
+	        webid:4028722,
+	        game_code: '4028722'
+	    }
+
+	 
+
+
+
+
+</script>
+</body>
+</html>
